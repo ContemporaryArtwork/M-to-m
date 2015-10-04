@@ -2,7 +2,7 @@ package mM;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import org.junit.Test;
+
 public class one {
     public static void main (String[] args) {
 
