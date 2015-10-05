@@ -6,7 +6,7 @@
   <artifactId>my-app</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <property name="KLSadd.tex"  location="src"/>
+  <property name="KLSadd.tex"  location="srl/KLSadd.tex/"/>
  
   <name>Maven Quick Start Archetype</name>
   <url>http://maven.apache.org</url>
