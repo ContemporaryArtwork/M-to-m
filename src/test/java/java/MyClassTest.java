@@ -9,19 +9,13 @@ import java.util.Scanner;
 public class MyClassTest {
     @Test
     public void testSomething() {
-<<<<<<< HEAD
         //String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
-<<<<<<< HEAD
         File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/" + file);
-=======
         String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
         File myFile = new File(workDir + "\\" + file);
->>>>>>> parent of 3b65d17... remove
-=======
       File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/" + file);
->>>>>>> origin/master
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
@@ -37,8 +31,5 @@ public class MyClassTest {
         }
 
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> parent of 3b65d17... remove
+
