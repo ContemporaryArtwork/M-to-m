@@ -27,7 +27,7 @@ public class Test_one {
     }
     @Test
     public void testSomething() {
-        main(new String[0);
+        main(new String[0]);
        
 
     }
