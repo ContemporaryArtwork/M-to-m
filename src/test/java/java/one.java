@@ -11,7 +11,7 @@ public class one {
     @Test
     public static void main (String[] args) {
 
-        String workDir = "/home/travis/build/ContemporaryArtwork/M-to-m/"
+        String workDir = "/home/travis/build/ContemporaryArtwork/M-to-m/";
         String file = "KLSadd.tex";
         File myFile = new File(workDir + file);
         try{
