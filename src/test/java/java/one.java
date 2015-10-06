@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class one {
     @Test
-    public static void main (String[] args) {
+    public void go() {
 
         String workDir = "/home/travis/build/ContemporaryArtwork/M-to-m/";
         String file = "KLSadd.tex";
