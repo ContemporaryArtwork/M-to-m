@@ -1,12 +1,13 @@
-/**
- * Created by Jake on 10/4/2015.
- */
+package mM;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class one {
-    public static void main (String[] args) {
+    @Test
+    public void testSomething() {
 
         String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
