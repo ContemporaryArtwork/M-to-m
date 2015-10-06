@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class MyClassTest {
     @Test
     public void testSomething() {
-        String workDir = System.getProperty("user.dir");
+        //String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
-        File myFile = new File(workDir + "\\" + file);
+        File myFile = new File("\\" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;

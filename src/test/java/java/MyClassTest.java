@@ -1,17 +1,17 @@
 package mM;
+
 import org.junit.Test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class one {
+public class MyClassTest {
     @Test
-    public void go() {
-
-        String workDir = System.getProperty("user.dir");
+    public void testSomething() {
+        //String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
-        File myFile = new File(workDir + "\\" + file);
+        File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
@@ -28,6 +28,3 @@ public class one {
 
     }
 }
-
-    
-
