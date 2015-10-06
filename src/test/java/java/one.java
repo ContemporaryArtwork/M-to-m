@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class one {
     @Test
-    public void go() {
+    public void testSomething() {
 
         String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
