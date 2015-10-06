@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class MyClassTest {
-    
+    @Test
     public void testSomething() {
         //String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
