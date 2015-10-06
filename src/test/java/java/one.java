@@ -1,20 +1,17 @@
-/**
- * Created by Jake on 10/4/2015.
- */
-package Mm;
+package mM;
+import org.junit.Test;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import org.junit.Test;
-
 
 public class one {
     @Test
     public void go() {
 
-        String workDir = "/home/travis/build/ContemporaryArtwork/M-to-m/";
+        String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
-        File myFile = new File(workDir + file);
+        File myFile = new File(workDir + "\\" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
@@ -28,6 +25,9 @@ public class one {
         } catch (FileNotFoundException e){
             System.out.println("please put KLSadd.tex in app directory!");
         }
+
+    }
+}
 
     }
 }
