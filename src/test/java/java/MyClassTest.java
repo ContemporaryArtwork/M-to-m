@@ -11,10 +11,10 @@ public class MyClassTest {
     public void testSomething() {
         //String workDir = System.getProperty("user.dir");
         String file = "KLSadd.tex";
-        File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/" + file);
-        String workDir = System.getProperty("user.dir");
-        String file = "KLSadd.tex";
-        File myFile = new File(workDir + "\\" + file);
+        
+        
+        
+      
       File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
