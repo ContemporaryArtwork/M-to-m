@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class one {
+public class TestAnother {
     @Test
     public void testSomething() {
 
