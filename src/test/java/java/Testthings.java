@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class MyClassTest {
+public class Testthings {
     @Test
     public void testSomething() {
         //String workDir = System.getProperty("user.dir");
