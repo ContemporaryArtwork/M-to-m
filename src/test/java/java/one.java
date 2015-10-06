@@ -1,6 +1,7 @@
 /**
  * Created by Jake on 10/4/2015.
  */
+package Mm;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
