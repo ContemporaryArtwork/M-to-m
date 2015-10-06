@@ -10,7 +10,7 @@ public class MyClassTest {
     @Test
     public void testSomething() {
         //String workDir = System.getProperty("user.dir");
-        //String file = "KLSadd.tex";
+        String file = "KLSadd.tex";
         File myFile = new File("\\" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
