@@ -15,7 +15,7 @@ public class Test_1 {
         
         
       
-      File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/" + file);
+      File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/java/resources/" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
