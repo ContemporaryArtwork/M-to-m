@@ -4,13 +4,16 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import org.junit.Test;
+
 
 public class one {
+    @Test
     public static void main (String[] args) {
 
-        String workDir = System.getProperty("user.dir");
+        String workDir = "/home/travis/build/ContemporaryArtwork/M-to-m/"
         String file = "KLSadd.tex";
-        File myFile = new File(workDir + "\\" + file);
+        File myFile = new File(workDir + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
