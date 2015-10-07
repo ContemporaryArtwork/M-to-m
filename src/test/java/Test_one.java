@@ -9,7 +9,8 @@ import java.util.Scanner;
 public class Test_one {
     public static void main(String[] args){
         String file = "KLSadd.tex";
-        File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/java/resources/" + file);
+        File myFile = new 
+File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/resources/" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
