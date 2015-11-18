@@ -7,9 +7,9 @@ import java.util.Scanner;
  * Created by ekaj on 10/7/15.
  */
 public class one_main {
-    public static void main(String[] args, String input){
+    public static void main(String[] args){
         
-        String file = input;
+        String file = args[0];
         File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/resources/" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
@@ -22,7 +22,7 @@ public class one_main {
                 System.out.println("\nnothing was done");
             }
         } catch (FileNotFoundException e){
-            System.out.println("please put " + input +  " in app directory!");
+            System.out.println("please put " + args[0] +  " in app directory!");
         }
 
     }
