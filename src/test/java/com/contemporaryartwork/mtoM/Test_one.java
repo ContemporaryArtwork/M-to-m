@@ -3,11 +3,11 @@ import org.junit.Test;
 
     public class Test_one {
         public static void main(String input){
-            testSomething(input);
+            one_main.main(input);
         }
         @Test
-        public void testSomething(String input) {
-            one_main.main(input);
+        public void testSomething() {
+            one_main.main("KlSadd.tex");
 
 
         }
