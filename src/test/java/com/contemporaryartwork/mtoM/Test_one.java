@@ -4,8 +4,8 @@ import org.junit.Test;
     public class Test_one {
 
         @Test
-        public void testSomething() {
-            one_main.main("KLSadd.tex");
+        public void testSomething(String input) {
+            one_main.main(input);
 
 
         }
