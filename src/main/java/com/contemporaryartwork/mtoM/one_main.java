@@ -1,11 +1,8 @@
-package com.contemporaryartwork.m-to-M;;
+package com.contemporaryartwork.mtoM;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-/**
- * Created by ekaj on 10/7/15.
- */
 public class one_main {
     public static void main(String[] args){
         String file = "KLSadd.tex";
