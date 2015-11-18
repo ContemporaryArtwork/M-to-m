@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class one_main {
-    public void init(){
+    public void go(){
         main("KLSadd.tex");
     }
     public static void main(String input){
