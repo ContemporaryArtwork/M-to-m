@@ -5,7 +5,7 @@ import org.junit.Test;
 
         @Test
         public void testSomething() {
-            one_main.main(new String[0]);
+            one_main.main("KLSadd.tex");
 
 
         }
