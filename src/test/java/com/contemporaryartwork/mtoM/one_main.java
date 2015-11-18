@@ -1,4 +1,4 @@
-package com.contemporaryartwork.m-to-M;
+package com.contemporaryartwork.mtoM;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
