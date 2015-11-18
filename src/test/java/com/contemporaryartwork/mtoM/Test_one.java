@@ -1,4 +1,4 @@
-package com.contemporaryartwork.m-to-M;
+package com.contemporaryartwork.mtoM;
 import org.junit.Test;
 
     public class Test_one {
