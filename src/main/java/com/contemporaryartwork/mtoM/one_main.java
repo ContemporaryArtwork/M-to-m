@@ -4,8 +4,11 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class one_main {
-    public static void main(String[] args){
-        String file = "KLSadd.tex";
+    public void init(){
+        main("KLSadd.tex");
+    }
+    public static void main(String input){
+        String file = input;
         File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/main/resources/" + file);
                 
         try{
@@ -19,7 +22,7 @@ public class one_main {
                 System.out.println("\nnothing was done");
             }
         } catch (FileNotFoundException e){
-            System.out.println("please put KLSadd.tex in app directory!");
+            System.out.println("please put " + input + " in app directory!");
         }
 
     }
