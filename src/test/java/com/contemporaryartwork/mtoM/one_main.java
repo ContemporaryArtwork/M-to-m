@@ -8,9 +8,7 @@ import java.util.Scanner;
  */
 public class one_main {
     public static void main(String input){
-        public void init(){
-            main("KLSadd.tex");
-        }
+        
         String file = input;
         File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/resources/" + file);
         try{
