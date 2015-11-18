@@ -1,17 +1,16 @@
-package mM;
-
-import org.junit.Test;
-
+package com.contemporaryartwork.m-to-M;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class MyClassTest {
-    @Test
-    public void testSomething() {
-        //String workDir = System.getProperty("user.dir");
+/**
+ * Created by ekaj on 10/7/15.
+ */
+public class one_main {
+    public static void main(String[] args){
         String file = "KLSadd.tex";
-        File myFile = new File("\\" + file);
+        File myFile = new
+                File("/home/travis/build/ContemporaryArtwork/M-to-m/src/main/resources/" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
