@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by ekaj on 10/7/15.
  */
 public class one_main {
-    public static void main(String[] args String input){
+    public static void main(String[] args, String input){
         
         String file = input;
         File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/resources/" + file);
