@@ -7,10 +7,12 @@ import java.util.Scanner;
  * Created by ekaj on 10/7/15.
  */
 public class one_main {
-    public static void main(String[] args){
-        String file = "KLSadd.tex";
-        File myFile = new
-                File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/resources/" + file);
+    public static void main(String input){
+        public void init(){
+            main("KLSadd.tex");
+        }
+        String file = input;
+        File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/resources/" + file);
         try{
             String output = new Scanner(myFile).useDelimiter("\\Z").next();
             String output1 = output;
@@ -22,7 +24,7 @@ public class one_main {
                 System.out.println("\nnothing was done");
             }
         } catch (FileNotFoundException e){
-            System.out.println("please put KLSadd.tex in app directory!");
+            System.out.println("please put " + input +  " in app directory!");
         }
 
     }
