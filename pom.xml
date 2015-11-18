@@ -24,7 +24,7 @@
      <mainClass>com.contemporaryartwork.mtoM.Test_one</mainClass>
       
       <arguments>  
-       <argument>KLsadd.tex</argument>  
+       <argument>KLSadd.tex</argument>  
        
       </arguments>  
      </configuration>  
