@@ -6,7 +6,9 @@ import java.util.Scanner;
 /**
  * Created by ekaj on 10/7/15.
  */
+ 
 public class one_main {
+    @BeforeClass
     public static void main(String args[]){
         String input = args[0];
         String file = input;
