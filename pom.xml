@@ -21,7 +21,7 @@
       <goal>java</goal>  
      </goals>  
      <configuration>  
-     <mainClass>com.contemporaryartwork.mtoM.Test_one</mainClass>
+     <mainClass>com.contemporaryartwork.mtoM.one_main</mainClass>
       
       <arguments>  
        <argument>KLSadd.tex</argument>  
