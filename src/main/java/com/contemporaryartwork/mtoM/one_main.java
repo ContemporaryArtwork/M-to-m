@@ -8,7 +8,7 @@ public class one_main {
         main("KLSadd.tex");
     }
     public static void main(String[] args){
-        String input = args[0];
+        String input = "KLSadd.tex"
         String file = input;
         File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/main/resources/" + file);
                 
