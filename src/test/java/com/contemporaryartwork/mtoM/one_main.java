@@ -7,8 +7,8 @@ import java.util.Scanner;
  * Created by ekaj on 10/7/15.
  */
 public class one_main {
-    public static void main(String...args){
-        String input = "KLSadd.tex";
+    public static void main(String args[]){
+        String input = args[0];
         String file = input;
         File myFile = new File("/home/travis/build/ContemporaryArtwork/M-to-m/src/test/resources/" + file);
         try{
