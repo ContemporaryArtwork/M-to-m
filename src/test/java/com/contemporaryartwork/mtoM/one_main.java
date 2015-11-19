@@ -2,6 +2,7 @@ package com.contemporaryartwork.mtoM;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import org.junit.*;
 
 /**
  * Created by ekaj on 10/7/15.
