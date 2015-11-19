@@ -3,8 +3,8 @@ import org.junit.Test;
 public class Test_one{
    
         @Test
-        public void testSomething(String input) {
-           String[] boo = {input};
+        public void testSomething() {
+           String[] boo = {"KLSadd.tex"};
             one_main.main(boo);
 
 
