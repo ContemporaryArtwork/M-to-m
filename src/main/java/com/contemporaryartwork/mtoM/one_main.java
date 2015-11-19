@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class one_main {
     public void go(){
-        main("KLSadd.tex");
+        String[] input = {"KLSadd.tex"};
+        main(input);
     }
     public static void main(String[] args){
         String input = "KLSadd.tex";
