@@ -6,10 +6,10 @@ public class Test_one{
       public static void main(String[] args){
          input = args[0];
       }
-   String binput = input;
+   
         @Test
         public void testSomething() {
-           String[] boo = {binput};
+           String[] boo = {input};
             one_main.main(boo);
 
 
