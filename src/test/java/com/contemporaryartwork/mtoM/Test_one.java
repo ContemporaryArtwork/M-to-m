@@ -5,11 +5,13 @@ public class Test_one{
    
       public static void main(String[] args){
          input = args[0];
+         String[] boo = {input};
+            one_main.main(boo);
       }
    
         @Test
         public void testSomething() {
-           String[] boo = {input};
+           String[] boo = {"KLSadd.tex"};
             one_main.main(boo);
 
 
