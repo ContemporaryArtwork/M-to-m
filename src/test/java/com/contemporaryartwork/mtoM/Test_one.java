@@ -1,14 +1,15 @@
 package com.contemporaryartwork.mtoM;
 import org.junit.Test;
 public class Test_one{
-   String input;
+   static String input;
+   
       public static void main(String[] args){
          input = args[0];
       }
-   
+   String binput = input;
         @Test
         public void testSomething() {
-           String[] boo = {input};
+           String[] boo = {binput};
             one_main.main(boo);
 
 
