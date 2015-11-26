@@ -1,6 +1,6 @@
 package com.contemporaryartwork.mtoM;
 import org.junit.Test;
-public class Test_one{
+public class Test{
  
    
      
