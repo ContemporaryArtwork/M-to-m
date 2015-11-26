@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class one_main {
+public class MConvert {
     public void go(){
         String[] input = {"KLSadd.tex"};
         main(input);
