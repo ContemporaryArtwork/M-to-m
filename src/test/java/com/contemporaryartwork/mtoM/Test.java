@@ -8,7 +8,7 @@ public class Test{
         @Test
         public void testSomething() {
            String[] boo = {"KLSadd.tex"};
-            MConvert.main(boo);
+            MConvertStream.main(boo);
 
 
         }
