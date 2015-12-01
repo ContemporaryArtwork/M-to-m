@@ -1,4 +1,3 @@
-package com.contemporaryartwork.mtoM;
 import org.junit.Test;
 public class Test{
  
