@@ -20,14 +20,7 @@
      <goals>  
       <goal>java</goal>  
      </goals>  
-     <configuration>  
-     <mainClass>com.contemporaryartwork.mtoM.MConvert</mainClass>
-      
-      <arguments>  
-       <argument>bla</argument>  
-       
-      </arguments>  
-     </configuration>  
+    
     </execution>  
    </executions>  
   </plugin>  
