@@ -1,4 +1,4 @@
-import org.junit.Test;
+package com.contemporaryartwork.mtoM;
 public class Test{
  
    
