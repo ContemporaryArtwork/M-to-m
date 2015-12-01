@@ -1,5 +1,5 @@
 package com.contemporaryartwork.mtoM;
-public class Test{
+public class TestMethod{
  
    
      
