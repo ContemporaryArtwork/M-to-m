@@ -27,7 +27,7 @@ public class MConvertStream {
         		output2 = output2.replace("M", "{&-}");
                 output2 = output2.replace("m", "M");
                 output2 = output2.replace("{&-}", "m");
-                if (output2.contains("{&-}"){
+                if (output2.contains("{&-}")){
                     output2 = output2.replace("{&-}", "m");
                 }
                 System.out.println("" + output2);
