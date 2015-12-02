@@ -4,10 +4,12 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.UUID;
+
 
 
 public class MConvertStream {
-    
+    static String replace = UUID.randomUUID().toString();
     public static void main(String[] args) throws IOException, FileNotFoundException{
     	FileInputStream inputStream = null;
     	Scanner sc = null;
@@ -24,12 +26,10 @@ public class MConvertStream {
         	while (sc.hasNextLine()){
         		String line = sc.nextLine();
         		String output2 = line;
-        		output2 = output2.replace("M", "{&-}");
+        		
+        		output2 = output2.replace("M", replace);
                 output2 = output2.replace("m", "M");
-                output2 = output2.replace("{&-}", "m");
-                if (output2.contains("{&-}")){
-                    output2 = output2.replace("{&-}", "m");
-                }
+                output2 = output2.replace(replace, "m");
                 System.out.println("" + output2);
 
         	}
