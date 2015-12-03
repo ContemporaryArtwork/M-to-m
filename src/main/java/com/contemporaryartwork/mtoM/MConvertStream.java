@@ -9,39 +9,35 @@ import java.util.UUID;
 
 
 public class MConvertStream {
-    static String replace = UUID.randomUUID().toString();
+    static String ReplacementString = UUID.randomUUID().toString();
     public static void main(String[] args) throws IOException, FileNotFoundException{
     	FileInputStream inputStream = null;
-    	Scanner sc = null;
-        String input = args[0];
-        String file = input;
-        File myFile = new File(file);
-
-       
-                
+    	Scanner ScanFile = null;
+        String InputFile = args[0];
+        File InputChangedtoFile = new File(InputFile);
         try{
 
-        	inputStream = new FileInputStream(myFile);
-        	sc = new Scanner(inputStream, "UTF-8");
-        	while (sc.hasNextLine()){
-        		String line = sc.nextLine();
-        		String output2 = line;
+        	inputStream = new FileInputStream(InputChangedtoFile);
+        	ScanFile = new Scanner(inputStream, "UTF-8");
+        	while (ScanFile.hasNextLine()){
+        		String OutputString = sc.nextLine();
+        		String ModifiedOutputString = OutputString;
         		
-        		output2 = output2.replace("M", replace);
-                output2 = output2.replace("m", "M");
-                output2 = output2.replace(replace, "m");
+        		ModifiedOutputString = output2.replace("M", ReplacementString);
+                ModifiedOutputString = output2.replace("m", "M");
+                ModifiedOutputString = output2.replace(ReplacementString, "m");
                 System.out.println("" + output2);
 
         	}
-        	 if (sc.ioException() != null) {
-        	        throw sc.ioException();
+        	 if (ScanFile.ioException() != null) {
+        	        throw ScanFile.ioException();
         	    }
         } finally {
             if (inputStream != null) {
                 inputStream.close();
             }
             if (sc != null) {
-                sc.close();
+                ScanFile.close();
             }
         }
         	
