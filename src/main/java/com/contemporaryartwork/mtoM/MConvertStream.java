@@ -20,13 +20,13 @@ public class MConvertStream {
         	inputStream = new FileInputStream(InputChangedtoFile);
         	ScanFile = new Scanner(inputStream, "UTF-8");
         	while (ScanFile.hasNextLine()){
-        		String OutputString = sc.nextLine();
+        		String OutputString = ScanFile.nextLine();
         		String ModifiedOutputString = OutputString;
         		
-        		ModifiedOutputString = output2.replace("M", ReplacementString);
-                ModifiedOutputString = output2.replace("m", "M");
-                ModifiedOutputString = output2.replace(ReplacementString, "m");
-                System.out.println("" + output2);
+        		ModifiedOutputString = ModifiedOutputString.replace("M", ReplacementString);
+                ModifiedOutputString = ModifiedOutputString.replace("m", "M");
+                ModifiedOutputString = ModifiedOutputString.replace(ReplacementString, "m");
+                System.out.println("" + ModifiedOutputString);
 
         	}
         	 if (ScanFile.ioException() != null) {
@@ -36,7 +36,7 @@ public class MConvertStream {
             if (inputStream != null) {
                 inputStream.close();
             }
-            if (sc != null) {
+            if (ScanFile != null) {
                 ScanFile.close();
             }
         }
