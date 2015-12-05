@@ -9,6 +9,7 @@ import java.util.UUID;
 
 
 public class MConvertStream {
+    //uses random uuid string to do replacement
     static String ReplacementString = UUID.randomUUID().toString();
     public static void main(String[] args) throws IOException, FileNotFoundException{
     	FileInputStream inputStream = null;
