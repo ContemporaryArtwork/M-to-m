@@ -13,7 +13,7 @@ public class MConvertStream {
     static String ReplacementString = UUID.randomUUID().toString();
    
     public static void main(String[] args) throws IOException, FileNotFoundException{
-        public boolean IsComplete = false;
+        boolean IsComplete = false;
     	FileInputStream inputStream = null;
     	Scanner ScanFile = null;
         String InputFile = args[0];
@@ -34,7 +34,7 @@ public class MConvertStream {
         	}
         	 if (ScanFile.ioException() != null) {
         	        throw ScanFile.ioException();
-        	        IsComplete = false;
+        	        
         	    }
         } finally {
             if (inputStream != null) {
