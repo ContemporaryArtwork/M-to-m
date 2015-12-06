@@ -11,8 +11,9 @@ import java.util.UUID;
 public class MConvertStream {
     //uses random uuid string to do replacement
     static String ReplacementString = UUID.randomUUID().toString();
-    boolean IsComplete = false;
+   
     public static void main(String[] args) throws IOException, FileNotFoundException{
+        boolean IsComplete = false;
     	FileInputStream inputStream = null;
     	Scanner ScanFile = null;
         String InputFile = args[0];
