@@ -30,7 +30,7 @@
           <executable>maven</executable>
           <workingDirectory>/tmp</workingDirectory>
           <arguments>
-            <argument>src/main/resources/${input}</argument>
+            <argument>${input}</argument>
           </arguments>
         </configuration>
       </plugin>
