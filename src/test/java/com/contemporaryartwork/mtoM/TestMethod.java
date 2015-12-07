@@ -13,8 +13,7 @@ public class TestMethod{
            String[] Input = {"src/test/resources/KLSadd.tex"};
             MConvertStream.main(Input);
 
-            assertArrayEquals (Input,Input);
-            //add assert
+           
             
 
 
