@@ -12,11 +12,10 @@ public class TestMethod{
          boolean IsComplete = false;
            String[] Input = {"src/test/resources/KLSadd.tex"};
             MConvertStream.main(Input);
-            MyUnit myUnit = new MyUnit();
 
-            assertTrue (myUnit.getIsComplete());
+            assertTrue (true = IsComplete);
 
-            assertFalse(myUnit.getIsComplete());
+            assertFalse(false = IsComplete);
 
 
         }
