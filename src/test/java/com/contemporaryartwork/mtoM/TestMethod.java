@@ -8,7 +8,7 @@ public class TestMethod{
    
         @Test
         public void testSomething() throws IOException {
-         boolean IsComplete = null;
+         boolean IsComplete = false;
            String[] Input = {"src/test/resources/KLSadd.tex"};
             MConvertStream.main(Input);
             if (IsComplete = true){
