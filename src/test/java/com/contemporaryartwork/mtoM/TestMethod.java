@@ -11,12 +11,11 @@ public class TestMethod{
          boolean IsComplete = false;
            String[] Input = {"src/test/resources/KLSadd.tex"};
             MConvertStream.main(Input);
-            if (IsComplete = true){
-             System.out.println("Test Completed Successfully");
-            }
-            else {
-             System.out.println("Test Failed");
-            }
+            MyUnit myUnit = new MyUnit();
+
+            assertTrue (myUnit.getIsComplete());
+
+            assertFalse(myUnit.getIsComplete());
 
 
         }
