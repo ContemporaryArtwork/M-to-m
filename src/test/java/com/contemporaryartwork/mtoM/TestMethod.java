@@ -1,6 +1,6 @@
 package com.contemporaryartwork.mtoM;
-import org.junit.Test;
-import org.junit.Assert.*;
+import org.junit.*;
+
 import java.io.IOException;
 public class TestMethod{
  
