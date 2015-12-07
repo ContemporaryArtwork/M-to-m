@@ -1,7 +1,7 @@
 package com.contemporaryartwork.mtoM;
 import org.junit.Test;
 import java.io.IOException;
-public class TestMethod{
+public class TestMethod extends MConvertStream{
  
    
      
