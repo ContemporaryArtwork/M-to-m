@@ -31,6 +31,7 @@
           <workingDirectory>/tmp</workingDirectory>
           <arguments>
             <argument>${input}</argument>
+            
           </arguments>
         </configuration>
       </plugin>
