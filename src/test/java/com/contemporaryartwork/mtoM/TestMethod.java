@@ -13,7 +13,7 @@ public class TestMethod{
          boolean IsComplete = false;
            String[] Input = {"src/test/resources/KLSadd.tex"};
             MConvertStream.main(Input);
-            assertTrue(IsComplete);
+            assertTrue("",IsComplete);
            
             
 
