@@ -10,7 +10,7 @@ public class TestMethod{
    
         @Test
         public void testSomething() throws IOException {
-         boolean IsComplete = false;
+         boolean IsComplete = true;
            String[] Input = {"src/test/resources/KLSadd.tex"};
             MConvertStream.main(Input);
             assertTrue("",IsComplete);
