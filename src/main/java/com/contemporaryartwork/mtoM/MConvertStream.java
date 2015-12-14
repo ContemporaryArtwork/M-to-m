@@ -1,53 +1,44 @@
 package com.contemporaryartwork.mtoM;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
-import java.util.UUID;
 
+public class Charstream {
+    public static void main(String[] args) throws IOException {
 
+        FileReader inputStream = null;
+        FileWriter outputStream = null;
 
-public class MConvertStream {
-    //uses random uuid string to do replacement
-    static String ReplacementString = UUID.randomUUID().toString();
-   
-    public static void main(String[] args) throws IOException, FileNotFoundException{
-        boolean IsComplete = false;
-    	FileInputStream inputStream = null;
-    	Scanner ScanFile = null;
-        String InputFile = args[0];
-        File InputChangedtoFile = new File(InputFile);
-        try{
-
-        	inputStream = new FileInputStream(InputChangedtoFile);
-        	ScanFile = new Scanner(inputStream, "UTF-8");
-        	while (ScanFile.hasNextLine()){
-        		String OutputString = ScanFile.nextLine();
-        		String ModifiedOutputString = OutputString;
-        		
-        		ModifiedOutputString = ModifiedOutputString.replace("M", ReplacementString);
-                ModifiedOutputString = ModifiedOutputString.replace("m", "M");
-                ModifiedOutputString = ModifiedOutputString.replace(ReplacementString, "m");
-                System.out.println("" + ModifiedOutputString);
-
-        	}
-        	 if (ScanFile.ioException() != null) {
-        	        throw ScanFile.ioException();
-        	        
-        	    }
+        try {
+            inputStream = new FileReader(args[0]);
+            
+            int c;
+            while ((c = inputStream.read()) != -1) {
+                if (c == 77){
+                	c = 109;
+                	System.out.print(Character.toChars(c));
+                	
+                }
+                else if (c == 109){
+                	c = 77;
+                	System.out.print(Character.toChars(c));
+                	
+                }
+                else if (c != 78 || c != 110){
+                	System.out.print(Character.toChars(c));
+                	
+                }
+                
+            	
+            }
         } finally {
             if (inputStream != null) {
                 inputStream.close();
-                IsComplete = true;
             }
-            if (ScanFile != null) {
-                ScanFile.close();
+            if (outputStream != null) {
+                outputStream.close();
             }
         }
-        	
-        
-        
-
     }
 }
